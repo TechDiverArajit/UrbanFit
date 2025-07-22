@@ -78,7 +78,7 @@ export const Minimal = ()=>{
 
     return(
         <>
-        <div className=" gap-50 h-[1109px] flex justify-around bg-amber-50  pt-40 ">
+        <div className=" gap-50 h-[1109px] flex justify-around bg-amber-50 z-2  pt-40 ">
             <div ref={minimal}>
                 <h1 className="font-semibold text-6xl">Minimal.</h1>
                 <img src="/src/assets/zara1.jpg" width={400} alt="" />
