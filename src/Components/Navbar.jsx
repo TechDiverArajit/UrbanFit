@@ -2,7 +2,8 @@ import { NavLink } from "react-router-dom"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+import SplitText from "gsap/SplitText";
+gsap.registerPlugin(ScrollTrigger,SplitText);
 export const Navbar = ()=>{
         
         const navHandler =({isActive})=>{
@@ -14,16 +15,18 @@ export const Navbar = ()=>{
 
 
         useGSAP(()=>{
+
+            const split = new SplitText(".hover-underline" , {type:"words"});
             
-            gsap.fromTo([".brandsm" , ".hover-underline"],
+            gsap.fromTo([".brandsm" ,split.words,],
                 {
                   y:-200,
-                  x:-200,
+                  
                   opacity:0
                 },
                 {
                     y:0,
-                    x:0,
+                    
                     opacity:1,
                     duration:1,
                     ease:"power1.inOut",
@@ -37,7 +40,7 @@ export const Navbar = ()=>{
         
 
         return(
-            <nav className=" flex sticky top-0 w-screen z-2 gap-20 m-10 h-15 pt-2 ml-0 shadow-2xl bg-amber-100  ">
+            <nav className=" flex sticky top-0 w-screen z-2 gap-20 p-10 bg-transparent h-15 pt-2 ml-0 shadow-2xl   ">
                 <h1 className="brandsm text-4xl font-extrabold pl-15">UrbanFit</h1>
                 <div className="flex gap-30 pl-80 text-4xl font-extralight ">
                 <NavLink style={navHandler} to="/"  className="hover-underline text-center h-9">Home</NavLink>
