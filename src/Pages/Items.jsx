@@ -40,8 +40,8 @@ export const Items = ()=>{
                 
                 <h1 className="absolute top-140 left-140 font-bold ">product details: </h1>
                 <span className="w-120 break-words absolute top-150 left-140 ">{product.description}</span>
-                <h1 className="absolute top-176 left-140 font-bold ">Material: </h1>
-                <span className="w-120 break-words absolute top-180 left-140 ">{product.material}</span>
+                <h1 className="absolute top-183 left-140 font-bold ">Material: </h1>
+                <span className="w-120 break-words absolute top-190 left-140 ">{product.material}</span>
                 <h1 className="absolute top-200 left-140 font-bold ">Delivery: </h1>
                 <span className="w-120 break-words absolute top-210 left-140 ">{product.delivery}</span>
         </div>
