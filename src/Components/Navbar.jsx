@@ -36,6 +36,10 @@ export const Navbar = ()=>{
             )
         })
 
+        const total = cart.cartProducts.reduce((acc ,curr)=>{
+            return acc+curr.price*curr.quantity
+        },0)
+
         
 
         return(
@@ -55,8 +59,8 @@ export const Navbar = ()=>{
                      rounded-xl text-md text-center absolute right-8 top-0 bg-amber-400`}>{cart.cartProducts.length}</h1>
                 </div>
                 <div>
-                    <div className={` ${isCartOpened?`w-[350px]`:`w-0`} overflow-y-auto shadow-[-2px_0_5px_rgba(0,0,0,0.45)] transition-all duration-300 ease-in h-200 bg-[#E2E2E2] fixed top-0 right-0`} >
-                    <span onClick={()=>setIsCartOpened(false)} className="font-medium text-lg p-3 cursor-pointer hover:text-gray-700">x Close</span>
+                    <div className={` ${isCartOpened?`w-[350px]`:`w-0`} overflow-y-auto shadow-[-2px_0_5px_rgba(0,0,0,0.45)] overflow-x-hidden transition-all duration-300 ease-in h-200 bg-[#E2E2E2] fixed top-0 right-0`} >
+                    <span onClick={()=>setIsCartOpened(false)} className="font-medium text-lg p-3 cursor-pointer hover:text-gray-700">{`Close >`}</span>
                     {cart.cartProducts.map(item => 
                         <div key={item.id}>
                             <CartItems obj={item} />
@@ -64,7 +68,8 @@ export const Navbar = ()=>{
                         
                     )}
                     <div className={`${isCartOpened?`w-[350px]`:`w-0`} transition-all duration-300 ease-in shadow-[0_-3px_10px_rgba(0,0,0,0.45)] h-[115px] bg-white fixed bottom-0 right-0`}>
-                        
+                        <h1 className="p-5"><span className="font-semibold ">SUBTOTAL: ₹</span>{total}</h1>
+                        <button className="font-bold w-80 border-2 ml-5 rounded-2xl hover:bg-gray-300 " >Proceed To Payment</button>
                     </div>
                 </div>
                 

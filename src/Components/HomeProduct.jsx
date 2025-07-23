@@ -5,7 +5,7 @@ import { useRef } from "react";
 import SplitText from "gsap/SplitText";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
-export const HomeProduct = ({img , title , price})=>{
+export const HomeProduct = ({obj})=>{
     const product = useRef();
 
     useGSAP(()=>{
@@ -29,9 +29,9 @@ export const HomeProduct = ({img , title , price})=>{
     return(
         <>
         <div ref={product} className="">
-            <img src="/src/assets/zara2sm.jpg" width={375} alt="" />
-            <h1>TEXTURED POLO OVERSHIRT</h1>
-            <h1>₹ 7,550.00</h1>
+            <img src={obj.smImg} width={375} alt="" />
+            <h1>{obj.title}</h1>
+            <h1>₹{obj.price}</h1>
         </div>
         </>
     )

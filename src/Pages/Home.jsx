@@ -72,6 +72,9 @@ export const Home=()=>{
         
         <Minimal/>
         <HomeProducts/>
+        <div>
+
+        </div>
         
         <div className="h-[1024px] flex gap-50 bg-gray-300 ">
             <div>
