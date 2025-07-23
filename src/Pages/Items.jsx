@@ -1,16 +1,24 @@
 import { useParams } from "react-router-dom"
 import MenProducts from "../DB/Products";
-import { useState } from "react";
+import WomanProduct from "../DB/WomanProducts";
+import { useEffect, useState } from "react";
+import { useCarts } from "../Context/cartContext";
 export const Items = ()=>{
 
     const param = useParams();
     console.log(param);
+    const joined = [...MenProducts , ...WomanProduct]
+    const {selectedSize, setSelectedSize , cart, dispatch} = useCarts();
 
-    const[selectedSize , setSelectedSize] = useState("M");
+    const product = joined.find(({id}) => param.id == id);
 
-    const product = MenProducts.find(({id}) => param.id == id);
+    const addToCart = ()=>{
+        dispatch({type:"ADD-TO-CART" , payload: product})
+    }
 
-    
+    useEffect(()=>{
+        localStorage.setItem("clothes",JSON.stringify(cart.cartProducts))
+    },[cart.cartProducts])
 
     return(
         <>
@@ -36,7 +44,7 @@ export const Items = ()=>{
                 <h1 className="text-sm absolute top-95 left-140 font-bold ">Reviews: <span className="font-normal">{product.reviews}</span></h1> 
                 <h1 className="text-sm absolute top-95 left-250 font-bold">{product.ratings}⭐</h1>
                 <button className="w-[465px] h-[47px] bg-[#F2EFEF] font-normal text-md transition-all duration-200 absolute top-105 left-140 rounded-2xl hover:bg-[#D6D6D6] ">ADD TO FAVOURITES</button>
-                <button className="w-[465px] h-[47px] bg-[#000] text-white font-normal transition-all duration-200 text-md absolute top-120 left-140 rounded-2xl hover:bg-[#2A2929] ">ADD TO BAG</button>
+                <button onClick={addToCart} className="w-[465px] h-[47px] bg-[#000] text-white font-normal transition-all duration-200 text-md absolute top-120 left-140 rounded-2xl hover:bg-[#2A2929] ">ADD TO BAG</button>
                 
                 <h1 className="absolute top-140 left-140 font-bold ">product details: </h1>
                 <span className="w-120 break-words absolute top-150 left-140 ">{product.description}</span>

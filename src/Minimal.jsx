@@ -26,7 +26,7 @@ export const Minimal = ()=>{
                     trigger: minimal.current,
                     start: "top 80%",
                     end: "bottom 60%",
-                    markers:true
+                    
                     
                 }
             }

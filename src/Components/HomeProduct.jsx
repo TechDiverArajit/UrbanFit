@@ -21,7 +21,7 @@ export const HomeProduct = ({img , title , price})=>{
                 trigger:product.current,
                 start: "top 100%",
                 end: "bottom 60%",
-                markers:true
+
             }
         })
     })

@@ -59,12 +59,12 @@ export const Home=()=>{
             <div ref={scope} className="">
             <h1 className="text-[450px] text-amber-50 font-semibold absolute top-0 left-3">
                 {['U','r','b','a','n','F','i','t'].map((char,idx)=>(
-                    <span key={idx} className="brand inline-block   text-amber-50">{char}</span>
+                    <span key={idx} className="brand  inline-block select-none  text-amber-50">{char}</span>
                 ))}
                 
             </h1>
-            <p className="subtitle text-5xl font-extralight   text-amber-50 absolute top-125 left-10">Unleash the Drip.</p>
-            <img ref={mainImg} className="absolute left-130 top-10 z-0 drop-shadow-2xl"  src="/adobe.png" width={745} alt="" />
+            <p className="subtitle text-5xl font-extralight select-none   text-amber-50 absolute top-125 left-10">Unleash the Drip.</p>
+            <img ref={mainImg} className="absolute left-130 top-10 z-0 drop-shadow-2xl select-none  "   src="/adobe.png" width={745} alt="" />
             {/* <video className=" absolute -z-2 top-30" src="/video.mp4" autoPlay loop muted playsInline></video> */}
             <Explore/>
         </div>

@@ -9,7 +9,9 @@ const MenProducts = [
         reviews: 278,
         ratings:4.5,
         color:"Light beige",
+        smImg:"/hm-1-2.avif",
         bigImg: "/hm-1-1.avif",
+        quantity:0,
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -21,8 +23,10 @@ const MenProducts = [
         description: "Top in waffled, midweight jersey made from a cotton blend with a round neckline, long sleeves, a straight-cut hem and ribbing around the neckline and cuffs. Slim fit that hugs the contours of your body, creating a fitted silhouette.",
         material:"Composition Cotton 90%, Polyester 9%, Elastane 1%",
         reviews: 278,
+        quantity:0,
         ratings:4.5,
         color:"Navy blue",
+        smImg:"/hm-2-2.avif",
         bigImg: "/hm-2-1.avif",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
@@ -38,6 +42,7 @@ const MenProducts = [
         reviews: 278,
         ratings:4.5,
         color:"Denim blue",
+        quantity:0,
         smImg:"/hm-3-2.avif",
         bigImg: "/hm-3-1.avif",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
@@ -54,6 +59,7 @@ const MenProducts = [
         ratings:5,
         color:"Denim blue",
         smImg:"/hm-4-2.avif",
+        quantity:0,
         bigImg: "/hm-4-1.avif",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
@@ -71,6 +77,7 @@ const MenProducts = [
         color:"Denim blue",
         smImg:"/hm-5-2.avif",
         bigImg: "/hm-5-1.avif",
+        quantity:0,
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -87,6 +94,7 @@ const MenProducts = [
         color:"Vintage grey",
         smImg:"/hm-6-2.avif",
         bigImg: "/hm-6-1.avif",
+        quantity:0,
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -102,6 +110,7 @@ const MenProducts = [
         color:"Denim blue",
         smImg:"/hm-7-2.avif",
         bigImg: "/hm-7-1.avif",
+        quantity:0,
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -117,6 +126,7 @@ const MenProducts = [
         color:"Light blue/Nothing",
         smImg:"/hm-8-2.avif",
         bigImg: "/hm-8-1.avif",
+        quantity:0,
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
