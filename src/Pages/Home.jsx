@@ -21,8 +21,11 @@ export const Home=()=>{
      const mainImg = useRef();
 
         useGSAP(()=>{
-        const split = new SplitText(".brand", { type: "chars" });
+        const split = new SplitText(".brand", { type: "chars" ,});
+        const subtitle = new SplitText(".sub",{type: "lines"});
         const t1 = gsap.timeline();
+        const t2 = gsap.timeline();
+        
 
         t1.from(mainImg.current,{
             y:500,
@@ -37,6 +40,15 @@ export const Home=()=>{
         stagger: 0.05,
         ease: "power4.out",
        })
+       gsap.from(subtitle.lines ,{
+            y: 200,
+            opacity: 0,
+            duration:1,
+            stagger: 0.05,
+            delay:2,
+            ease: "power4.out",
+        })
+       
         t1.fromTo(".subtitle",
             {
                 x:-200,
@@ -54,26 +66,36 @@ export const Home=()=>{
 
     return(
         <>
-        <div className="h-screen  bg-gradient-to-b  from-[#e8e8e8] to-[#1a1a1a] relative overflow-hidden ">
+        <div className="h-screen  bg-gradient-to-b  bg-white relative overflow-hidden ">
             
             <div ref={scope} className="">
-            <h1 className="text-[450px] text-amber-50 font-semibold absolute top-0 left-3">
-                {['U','r','b','a','n','F','i','t'].map((char,idx)=>(
-                    <span key={idx} className="brand  inline-block select-none  text-amber-50">{char}</span>
+                <div className="relative -top-30">
+            <h1 className=" text-[100px] sm:text-[300px] xl:text-[340px] text-amber-50 font-semibold absolute top-0 left-3">
+                {['U','r','b','a','n'].map((char,idx)=>(
+                    <span key={idx} className="brand  inline-block select-none  text-black">{char}</span>
                 ))}
                 
             </h1>
-            <p className="subtitle text-5xl font-extralight select-none   text-amber-50 absolute top-125 left-10">Unleash the Drip.</p>
-            <img ref={mainImg} className="absolute left-130 top-10 z-0 drop-shadow-2xl select-none  "   src="/adobe.png" width={745} alt="" />
+            <h1 className=" text-[100px] sm:text-[300px] xl:text-[340px] text-amber-50 font-semibold absolute top-65 left-3" >
+                {['F','i','t'].map((char,idx)=>(
+                    <span key={idx} className="brand  inline-block select-none  text-black">{char}</span>
+                ))}
+            </h1>
+            </div>
+            <p className="subtitle text-5xl font-extralight select-none   text-black absolute top-135 left-10">Unleash the Drip.</p>
+            <img ref={mainImg} className="w-[185] bottom-0  absolute left-10 xl:left-180 top-1 xl:w-[605px]  z-0 drop-shadow-2xl select-none  "   src="/zara.png"  alt="" />
             {/* <video className=" absolute -z-2 top-30" src="/video.mp4" autoPlay loop muted playsInline></video> */}
             <Explore/>
+            <h1 className="sub font-semibold text-md absolute bottom-30 right-10 ">
+                Modern fashion reimagined for effortless elegance. Every piece is crafted <br />to blend simplicity with sophistication — versatile, timeless, and made <br /> to move with you, from morning coffee to midnight plans.
+            </h1>
         </div>
         </div>
         
         <Minimal/>
         <HomeProducts/>
         <div>
-
+                
         </div>
         
         <div className="h-[1024px] flex gap-50 bg-gray-300 ">
