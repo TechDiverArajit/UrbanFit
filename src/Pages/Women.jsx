@@ -22,7 +22,7 @@ export const Women =()=>{
         <>
         
         <h1 className="font-bold text-2xl p-20 inline-block" >New Arrivals for women</h1>
-        <div ref={i} className="flex gap-20 mx-20 flex-wrap justify-center relative">
+        <div ref={i} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:gap-20 gap-4 md:gap-10 sm:gap-5  xl:gap-20 lg:mx-15 md:mx-10 sm:mx-5 mx-2 flex-wrap justify-center relative">
             {WomanProduct.map(item=>
                 <Clothes product={item} />
             )}

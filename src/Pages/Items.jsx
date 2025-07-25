@@ -1,10 +1,13 @@
 import { useParams } from "react-router-dom"
 import MenProducts from "../DB/Products";
 import WomanProduct from "../DB/WomanProducts";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useCarts } from "../Context/cartContext";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 export const Items = ()=>{
 
+    const item = useRef();
     const param = useParams();
     console.log(param);
     const joined = [...MenProducts , ...WomanProduct]
@@ -20,14 +23,26 @@ export const Items = ()=>{
         localStorage.setItem("clothes",JSON.stringify(cart.cartProducts))
     },[cart.cartProducts])
 
+    useGSAP(()=>{
+        gsap.fromTo(item.current,{
+            y:100,
+            opacity:0,
+            duration:0.3
+        },{
+            y:0,
+            opacity:1,
+            duration:0.4
+        })
+    })
+
     return(
         <>
-        <div >
-            <div className="flex relative w-[1250px] h-[870px]  m-auto ">
-                <div >
-            <img className="absolute" src={product.bigImg} width={520} alt="" />
-        </div>
-        <div className=" overflow-y-auto mt-20 w-250 h-fit flex flex-col ml-140 gap-5 ">
+        <section>
+            <div ref={item} className="flex flex-col md:flex-col  lg:flex-row  xl:flex-row  max-w-[1250px] overflow-x-hidden  m-auto ">
+                <div className="mx-auto max-w-[530px] " >
+            <img className="sm:w-[370px] w-[320px] md:w-[420px] lg:w-[470px] xl:w-[520px] " src={product.bigImg}  alt="" />
+            </div>
+        <div className="  mt-20 max-w-250  flex flex-col right-0 mx-5 sm:mx-auto xl:ml-10 gap-5 ">
               <h1 className="text-2xl">{product.title}</h1>
               <h1 className="text-2xl  "> Rs:{product.price}.00</h1>
               <h1 className="text-sm ">MRP inclusive of all taxes</h1>
@@ -43,19 +58,19 @@ export const Items = ()=>{
 
                 <h1 className="text-sm  ">Reviews: <span className="font-normal">{product.reviews}</span></h1> 
                 <h1 className="text-sm ">{product.ratings}⭐</h1>
-                <button className="w-[465px] h-[47px] bg-[#F2EFEF] font-normal text-md transition-all duration-200  rounded-2xl hover:bg-[#D6D6D6] ">ADD TO FAVOURITES</button>
-                <button onClick={addToCart} className="w-[465px] h-[47px] bg-[#000] text-white font-normal transition-all duration-200 text-md  rounded-2xl hover:bg-[#2A2929] ">ADD TO BAG</button>
+                <button className="max-w-[465px] h-[47px] mx-3 bg-[#F2EFEF] font-normal text-md transition-all duration-200  rounded-2xl hover:bg-[#D6D6D6] ">ADD TO FAVOURITES</button>
+                <button onClick={addToCart} className="max-w-[465px] h-[47px] mx-3 bg-[#000] text-white font-normal transition-all duration-200 text-md  rounded-2xl hover:bg-[#2A2929] ">ADD TO BAG</button>
                 
                 <h1 className=" ">product details: </h1>
-                <span className="w-120 break-words ">{product.description}</span>
+                <span className="max-w-120 break-words ">{product.description}</span>
                 <h1 className=" font-bold ">Material: </h1>
-                <span className="w-120 break-words  ">{product.material}</span>
+                <span className="max-w-120 break-words  ">{product.material}</span>
                 <h1 className=" font-bold ">Delivery: </h1>
-                <span className="w-120 break-words  ">{product.delivery}</span>
+                <span className="max-w-120 break-words  ">{product.delivery}</span>
         </div>
             </div>
             
-        </div>
+        </section>
         
         
       

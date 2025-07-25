@@ -70,24 +70,24 @@ export const Home=()=>{
             
             <div ref={scope} className="">
                 <div className="relative -top-30">
-            <h1 className=" text-[100px] sm:text-[300px] xl:text-[340px] text-amber-50 font-semibold absolute top-0 left-3">
+            <h1 className=" text-[120px] lg:text-[250px] xl:text-[340px] text-amber-50 font-semibold absolute xl:top-0 top-50 left-3">
                 {['U','r','b','a','n'].map((char,idx)=>(
                     <span key={idx} className="brand  inline-block select-none  text-black">{char}</span>
                 ))}
                 
             </h1>
-            <h1 className=" text-[100px] sm:text-[300px] xl:text-[340px] text-amber-50 font-semibold absolute top-65 left-3" >
+            <h1 className=" text-[120px] md:text-[1] lg:text-[250px] xl:text-[340px] text-amber-50 font-semibold absolute lg:top-96  xl:top-65 top-80   left-3" >
                 {['F','i','t'].map((char,idx)=>(
                     <span key={idx} className="brand  inline-block select-none  text-black">{char}</span>
                 ))}
             </h1>
             </div>
-            <p className="subtitle text-5xl font-extralight select-none   text-black absolute top-135 left-10">Unleash the Drip.</p>
-            <img ref={mainImg} className="w-[185] bottom-0  absolute left-10 xl:left-180 top-1 xl:w-[605px]  z-0 drop-shadow-2xl select-none  "   src="/zara.png"  alt="" />
+            <p className="subtitle xl:text-5xl text-xl font-extralight select-none   text-black absolute xl:top-135 top-90 left-5  xl:left-10">Unleash the Drip.</p>
+            <img ref={mainImg} className="w-[600px]  xl:bottom-0  absolute left-10 xl:left-180 xl:top-1 top-83 xl:w-[605px]   z-0 drop-shadow-2xl select-none  "   src="/zara.png"  alt="" />
             {/* <video className=" absolute -z-2 top-30" src="/video.mp4" autoPlay loop muted playsInline></video> */}
             <Explore/>
-            <h1 className="sub font-semibold text-md absolute bottom-30 right-10 ">
-                Modern fashion reimagined for effortless elegance. Every piece is crafted <br />to blend simplicity with sophistication — versatile, timeless, and made <br /> to move with you, from morning coffee to midnight plans.
+            <h1 className="sub font-semibold text-[11px] xl:text-[12px] w-80  xl:w-100  absolute bottom-30 right-8 ">
+                Modern fashion reimagined for effortless elegance. Every piece is crafted to blend simplicity with sophistication — versatile, timeless, and made to move with you, from morning coffee to midnight plans.
             </h1>
         </div>
         </div>

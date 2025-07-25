@@ -24,10 +24,10 @@ export const Clothes = ({product})=>{
 
     return(
         <>
-            <div ref={item} onClick={()=>navigate(`/Items/${product.id}`)}  className="transition duration-400 hover:-translate-y-3 ">
-                <img src={product.bigImg} width={370} alt="" />
-                <h1 className="font-extralight text-lg">{product.title}</h1>
-                <h1>₹{product.price}</h1>
+            <div ref={item} onClick={()=>navigate(`/Items/${product.id}`)}  className="transition duration-400   max-w-[370px] hover:-translate-y-3 ">
+                <img className="w-[370px]" src={product.bigImg}  alt="" />
+                <h1 className=" xl:text-lg lg:text-md md:text-sm  text-[12px] lg: font-extralight max-w-fit">{product.title}</h1>
+                <h1 className=" xl:text-lg lg:text-md md:text-sm  text-[12px] lg: font-extralight max-w-fit" >₹{product.price}</h1>
             </div>
         </>
     )
