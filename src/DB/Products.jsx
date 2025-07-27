@@ -138,6 +138,99 @@ const MenProducts = [
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
+    {
+        id: 9,
+        title:"LEATHER EFFECT BIKER JACKET",
+        brand:"Zara",
+        price:5995,
+        size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
+        description: "Relaxed fit jacket made in a leather effect fabric. Featuring a notched lapel collar and long sleeves with adjustable zip cuffs. Front zip pockets and inside pocket detail. Asymmetric zip-up front.",
+        material:"100% polyester",
+        reviews: 0,
+        ratings:5,
+        color:"Light blue/Nothing",
+        smImg:"/zara-1-2.jpg",
+        bigImg: "/zara_1_1.jpg",
+        quantity:0,
+        similer:[2,4,3,1],
+        delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
+        
+    },
+    {
+        id: 10,
+        title:"TEXTURED POLO SHIRT",
+        brand:"Zara",
+        price:2995,
+        size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
+        description: "Regular fit polo shirt made of fabric with a geometric texture. Featuring a spread collar with a front opening and short sleeves.",
+        material:"95% cotton, 5% polyester",
+        reviews: 0,
+        ratings:5,
+        color:"blue",
+        smImg:"/zara-2-2.jpg",
+        bigImg: "/zara-2-1.jpg",
+        quantity:0,
+        similer:[2,4,3,1],
+        delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
+        
+    },
+    {
+        id: 11,
+        title:"TEXTURED POLO SHIRT",
+        brand:"Zara",
+        price:4995,
+        size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
+        description: "Polo shirt made from cotton fabric. Polo collar with button-up front fastening. Long sleeves finished with buttoned cuffs.",
+        material:"100% polyester",
+        reviews: 0,
+        ratings:5,
+        color:"Cream",
+        smImg:"/zara-3-2.jpg",
+        bigImg: "/zara-3-1.jpg",
+        quantity:0,
+        similer:[2,4,3,1],
+        delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
+        
+    },
+    {
+        id: 12,
+        title:"STRAIGHT FIT JEANS",
+        brand:"Zara",
+        price:2950,
+        size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
+        description: "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric",
+        material:"100% cotton",
+        reviews: 101,
+        ratings:4.5,
+        color:"Light blue",
+        acolor:"blue",
+        smImg:"/zara-4-2.jpg",
+        bigImg: "/zara-4-1.jpg",
+        quantity:0,
+        similer:[2,4,3,1],
+        delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
+
+        
+    },
+    {
+        id: 13,
+        title:"Regular-fit cotton lyocell overshirt",
+        price:2874,
+        brand:"Mango",
+        size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
+        description: "Cotton and lyocell-blend fabric. Regular fit. Shirt Collar. Two patch pockets on the chest. Front closure with metal buttons. Loops on the back seam of the shirt. Long sleeve with buttoned cuffs. Rounded base. Model is 190 cm tall and wears a size M.",
+        material:" 51% lyocell, 49% cotton",
+        reviews: 0,
+        ratings:5,
+        color:"Off White",
+        smImg:"/mango-1-2.avif",
+        bigImg: "/mango-1-1.avif",
+        quantity:0,
+        similer:[2,4,3,1],
+        delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
+        
+    },
+
 
 ]
 export default MenProducts

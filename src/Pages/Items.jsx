@@ -12,6 +12,7 @@ export const Items = ()=>{
     const param = useParams();
     console.log(param);
     const joined = [...MenProducts , ...WomanProduct]
+    
     const {selectedSize, setSelectedSize , cart, dispatch} = useCarts();
 
     const product = joined.find(({id}) => param.id == id);
@@ -19,6 +20,7 @@ export const Items = ()=>{
     const addToCart = ()=>{
         dispatch({type:"ADD-TO-CART" , payload: product})
     }
+    const[selectedImg , setSelectedImg] = useState(product.bigImg);
 
     useEffect(()=>{
         localStorage.setItem("clothes",JSON.stringify(cart.cartProducts))
@@ -37,15 +39,25 @@ export const Items = ()=>{
     })
 
     useEffect(()=>{
+        setSelectedImg(product.bigImg)
+    },[product])
+
+    useEffect(()=>{
         window.scrollTo(0, 0);
     },[])
+
+    
 
     return(
         <>
         <section>
             <div ref={item} className="flex flex-col md:flex-col  lg:flex-row  xl:flex-row  max-w-[1250px] overflow-x-hidden  m-auto ">
-                <div className="mx-auto max-w-[530px] " >
-            <img className="sm:w-[370px] w-[320px] md:w-[420px] lg:w-[470px] xl:w-[520px] " src={product.bigImg}  alt="" />
+                <div className="   mx-auto max-w-[530px] " >
+            <img className="sm:w-[370px] w-[320px] md:w-[420px] lg:w-[470px] xl:w-[520px] " src={selectedImg}  alt="" />
+            <div className="flex gap-5 h-25  mt-3 items-center">
+            <button onClick={()=>setSelectedImg(product.bigImg)} className={ `${selectedImg==product.bigImg?`border-0`:``} w-15 h-20 `}><img src={product.bigImg} alt="" /></button>
+            <button onClick={()=>setSelectedImg(product.smImg)}  className={ `${selectedImg==product.smImg?`border-0`:``} w-15 h-20 `}><img src={product.smImg}  alt="" /></button>
+            </div>
             </div>
         <div className="  mt-20 max-w-250  flex flex-col right-0 mx-5 sm:mx-auto xl:ml-10 gap-5 ">
               <h1 className="text-2xl">{product.title}</h1>

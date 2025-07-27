@@ -1,6 +1,6 @@
 const WomanProduct = [
     {
-        id:9,
+        id:14,
         title:"Denim waistcoat for women",
         price:1499,
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
@@ -17,7 +17,7 @@ const WomanProduct = [
         
     },
     {
-        id:10,
+        id:15,
         title:"Wide High Jeans for women",
         price:1999,
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
@@ -34,7 +34,7 @@ const WomanProduct = [
         
     },
     {
-        id:11,
+        id:16,
         title:"Wide High Ankle Jeans for women",
         price:2499,
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
@@ -51,7 +51,7 @@ const WomanProduct = [
         
     },
     {
-        id:12,
+        id:17,
         title:"Sleeveless denim dress for women",
         price:2299,
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
@@ -68,7 +68,7 @@ const WomanProduct = [
         
     },
      {
-        id:13,
+        id:18,
         title:"Draped midi dress for women",
         price:1499,
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
@@ -85,7 +85,7 @@ const WomanProduct = [
         
     },
      {
-        id:14,
+        id:19,
         title:"Tailored waistcoat for women",
         price:1499,
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
@@ -102,7 +102,7 @@ const WomanProduct = [
         
     },
     {
-        id:15,
+        id:20,
         title:"Printed T-shirt for women",
         price:699,
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
@@ -119,7 +119,7 @@ const WomanProduct = [
         
     },
     {
-        id:16,
+        id:21,
         title:"Printed T-shirt for women",
         price:699,
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
