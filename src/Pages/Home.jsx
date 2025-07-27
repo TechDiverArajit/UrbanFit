@@ -69,24 +69,24 @@ export const Home=()=>{
         <div className="h-screen  bg-gradient-to-b  bg-white relative overflow-hidden ">
             
             <div ref={scope} className="">
-                <div className="relative -top-30">
-            <h1 className=" text-[120px] lg:text-[250px] xl:text-[340px] text-amber-50 font-semibold absolute xl:top-0 top-50 left-3">
+            <div className="  flex flex-col relative px-4 top-40 sm:-top-20  ">
+            <h1 className="text-[100px] sm:text-[200px] lg:text-[300px] md:text-[250px] xl:text-[340px] md:h-50 sm:h-40 h-20 lg:h-60  self-start xl:h-70 font-semibold">
                 {['U','r','b','a','n'].map((char,idx)=>(
                     <span key={idx} className="brand  inline-block select-none  text-black">{char}</span>
                 ))}
                 
             </h1>
-            <h1 className=" text-[120px] md:text-[1] lg:text-[250px] xl:text-[340px] text-amber-50 font-semibold absolute lg:top-96  xl:top-65 top-80   left-3" >
+            <h1 className=" text-[100px] sm:text-[200px] lg:text-[300px] md:text-[250px] md:h-70 sm:h-60 h-30 lg:h-85 xl:h-100 xl:text-[340px] font-semibold " >
                 {['F','i','t'].map((char,idx)=>(
                     <span key={idx} className="brand  inline-block select-none  text-black">{char}</span>
                 ))}
             </h1>
+            <p className="subtitle lg:text-3xl md:text-xl sm:text-md text-sm xl:text-5xl pl-2 sm:pl-5 ">Unleash the Drip.</p>
             </div>
-            <p className="subtitle xl:text-5xl text-xl font-extralight select-none   text-black absolute xl:top-135 top-90 left-5  xl:left-10">Unleash the Drip.</p>
-            <img ref={mainImg} className="w-[600px]  xl:bottom-0  absolute left-10 xl:left-180 xl:top-1 top-83 xl:w-[605px]   z-0 drop-shadow-2xl select-none  "   src="/zara.png"  alt="" />
+            <img ref={mainImg} className="max-w-[400px] md:max-w-[500px]  xl:bottom-0  absolute left-10 xl:left-180 xl:top-1 top-83 xl:max-w-[605px]   z-0 drop-shadow-2xl select-none  "   src="/zara.png"  alt="" />
             {/* <video className=" absolute -z-2 top-30" src="/video.mp4" autoPlay loop muted playsInline></video> */}
             <Explore/>
-            <h1 className="sub font-semibold text-[11px] xl:text-[12px] w-80  xl:w-100  absolute bottom-30 right-8 ">
+            <h1 className="sub font-semibold text-[10px] xl:text-[12px] w-80 mx-auto xl:w-100  absolute bottom-30 ml-2 sm:right-8 ">
                 Modern fashion reimagined for effortless elegance. Every piece is crafted to blend simplicity with sophistication — versatile, timeless, and made to move with you, from morning coffee to midnight plans.
             </h1>
         </div>
@@ -94,9 +94,7 @@ export const Home=()=>{
         
         <Minimal/>
         <HomeProducts/>
-        <div>
-                
-        </div>
+        
         
         <div className="h-[1024px] flex gap-50 bg-gray-300 ">
             <div>

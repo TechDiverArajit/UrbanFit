@@ -12,6 +12,7 @@ const MenProducts = [
         smImg:"/hm-1-2.avif",
         bigImg: "/hm-1-1.avif",
         quantity:0,
+        similer:[2,5,3,6],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -28,6 +29,7 @@ const MenProducts = [
         color:"Navy blue",
         smImg:"/hm-2-2.avif",
         bigImg: "/hm-2-1.avif",
+        similer:[5,7,6,4],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -45,6 +47,7 @@ const MenProducts = [
         quantity:0,
         smImg:"/hm-3-2.avif",
         bigImg: "/hm-3-1.avif",
+        similer:[3,5,4,6],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -61,6 +64,7 @@ const MenProducts = [
         smImg:"/hm-4-2.avif",
         quantity:0,
         bigImg: "/hm-4-1.avif",
+        similer:[2,4,5,6],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -78,6 +82,7 @@ const MenProducts = [
         smImg:"/hm-5-2.avif",
         bigImg: "/hm-5-1.avif",
         quantity:0,
+        similer:[2,1,3,5],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -95,6 +100,7 @@ const MenProducts = [
         smImg:"/hm-6-2.avif",
         bigImg: "/hm-6-1.avif",
         quantity:0,
+        similer:[2,4,3,6],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -111,6 +117,7 @@ const MenProducts = [
         smImg:"/hm-7-2.avif",
         bigImg: "/hm-7-1.avif",
         quantity:0,
+        similer:[1,5,3,2],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -127,6 +134,7 @@ const MenProducts = [
         smImg:"/hm-8-2.avif",
         bigImg: "/hm-8-1.avif",
         quantity:0,
+        similer:[2,4,3,1],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },

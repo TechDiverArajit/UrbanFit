@@ -5,6 +5,7 @@ import { Women } from "./Pages/Women"
 import { Blog } from "./Pages/Blog"
 import { Items } from "./Pages/Items"
 import { Route , Routes } from "react-router-dom"
+import { Footer } from "./Components/Footer"
 function App() {
   
 
@@ -18,6 +19,7 @@ function App() {
                 <Route path="/Blog" element={<Blog/>}/>
                 <Route path="/Items/:id" element={<Items/>} />
             </Routes>
+            <Footer/>
     </>
   )
 }

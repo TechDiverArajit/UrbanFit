@@ -4,6 +4,7 @@ import WomanProduct from "../DB/WomanProducts";
 import { useEffect, useRef, useState } from "react";
 import { useCarts } from "../Context/cartContext";
 import { useGSAP } from "@gsap/react";
+import { SimilerProducts } from "../Components/SimilerProducts";
 import gsap from "gsap";
 export const Items = ()=>{
 
@@ -34,6 +35,10 @@ export const Items = ()=>{
             duration:0.4
         })
     })
+
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
 
     return(
         <>
@@ -68,6 +73,16 @@ export const Items = ()=>{
                 <h1 className=" font-bold ">Delivery: </h1>
                 <span className="max-w-120 break-words  ">{product.delivery}</span>
         </div>
+            </div>
+            
+        </section>
+        <section className="m-5">
+            <h1 className="text-2xl font-bold  mt-30">Similar Products</h1>
+            <div className="  px-2 xl:pl-15 grid xl:grid-cols-4 sm:grid-cols-3 grid-cols-2 lg:gap-8 md:gap-6 sm:gap-4 gap-4 xl:gap-10 mt-2">
+                {product.similer.map(item=>
+                    <SimilerProducts obj={joined[item]}/>
+                )}
+
             </div>
             
         </section>

@@ -12,7 +12,7 @@ export const CartItems = ({obj})=>{
 
     return(
         <>
-            <div className="flex flex-col relative  xl:flex-row my-10 mx-3 w-46 xl:w-[316px] sm:max-w-100% rounded-2xl h-[175px] shadow-lg bg-white">
+            <div className="flex flex-col relative  xl:flex-row my-10 mx-3 w-46 xl:w-[316px]  sm:max-w-100% rounded-2xl  shadow-lg bg-white">
                 <img className="w-[60px] sm:w-[80px] md:w-[100px] xl:w-[120px] rounded-2xl mx-auto" src={obj.smImg}   alt="" />
                 <div className="flex flex-col gap-1 pl-2 text-[10px] xl:text-sm">
                 <h1 className="font-light text-[12px] mt-0 xl:mt-3 ">{obj.title}</h1>

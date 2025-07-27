@@ -31,7 +31,7 @@ export const HomeProduct = ({obj})=>{
 
     return(
         <>
-        <div onClick={()=>navigate(`/Items/${obj.id}`)}  ref={product} className=" mx-auto w-[150px] lg:w-[400px] h-fit ">
+        <div onClick={()=>navigate(`/Items/${obj.id}`)}  ref={product} className=" mx-auto pt-10  w-[150px] lg:w-[400px] h-fit ">
             <img className=" w-[200px] md:w-[375px]" src={obj.smImg} width={375} alt="" />
             <h1 className="xl:text-lg md:text-md sm:text-sm text-[12px]"  >{obj.title}</h1>
             <h1 className="xl:text-lg md:text-md sm:text-sm text-[12px]" >₹{obj.price}</h1>
