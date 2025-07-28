@@ -4,6 +4,7 @@ import { Navbar } from "../Components/Navbar"
 import WomanProduct from "../DB/WomanProducts"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
+import { useEffect } from "react"
 export const Women =()=>{
     const i = useRef();
 
@@ -18,6 +19,9 @@ export const Women =()=>{
             }
         )
     })
+    useEffect(()=>{
+            window.scrollTo(0,0);
+        },[])
     return(
         <>
         

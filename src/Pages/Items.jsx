@@ -60,7 +60,7 @@ export const Items = ()=>{
             </div>
             </div>
         <div className="  mt-20 max-w-250  flex flex-col right-0 mx-5 sm:mx-auto xl:ml-10 gap-5 ">
-              <h1 className="text-2xl">{product.title}</h1>
+              <h1 className="text-2xl"> <span className="font-semibold" >{product.brand}</span> {product.title}</h1>
               <h1 className="text-2xl  "> Rs:{product.price}.00</h1>
               <h1 className="text-sm ">MRP inclusive of all taxes</h1>
               <h1 className="text-sm ">Color: <span className="font-normal">{product.color}</span></h1>

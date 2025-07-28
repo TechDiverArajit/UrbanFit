@@ -2,98 +2,54 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 gsap.registerPlugin(ScrollTrigger);
 
 
 export const Minimal = ()=>{
 
-    const minimal =  useRef();
-    const Impactful = useRef();
-    const iconic = useRef();
+    const i = useRef();
+    const navigate = useNavigate();
 
     useGSAP(()=>{
-        gsap.fromTo(minimal.current, 
+        gsap.fromTo(i.current,
             {
-            y:200,
-            opacity:0
+                scale:1.1,
             },
             {
-                y:0,
-                opacity:1,
-                duration:1,
-                ease:"power1.inOut",
+                scale:1,
+                duration:0.5,
+                ease:"power4.in",
                 scrollTrigger:{
-                    trigger: minimal.current,
-                    start: "top 80%",
-                    end: "bottom 60%",
-                    
+                    trigger:i.current,
+                    start:"top 20%"
                     
                 }
             }
         )
-        gsap.fromTo(Impactful.current, 
-            {
-            y:200,
-            opacity:0
-            },
-            {
-                y:0,
-                opacity:1,
-                duration:1,
-                ease:"power1.inOut",
-                scrollTrigger:{
-                    trigger: Impactful.current,
-                    start: "top 70%",
-                    end: "bottom 60%",
-                    
-                    
-                }
-            }
-        )
-
-        gsap.fromTo(iconic.current, 
-            {
-            y:200,
-            opacity:0
-            },
-            {
-                y:0,
-                opacity:1,
-                duration:1,
-                ease:"power1.inOut",
-                scrollTrigger:{
-                    trigger: iconic.current,
-                    start: "top 50%",
-                    end: "bottom 60%",
-                    
-                    
-                }
-            }
-        )
-
-        
-
-
     })
 
     return(
         <>
-        <div className=" xl:gap-50 lg:gap-40    md:gap-30 sm:gap-20 gap-10 h-fit bg-blue-50 z-2 p-5 md:pt-40 ">
-            <div className="m-auto flex flex-col md:flex-row justify-around gap-10 sm:gap-16 md:gap-20 lg:gap-28 xl:gap-36">
-
-            
-            <div ref={minimal} className="flex flex-col items-center md:items-start ">
-                <h1 className="font-semibold lg:text-4xl text-3xl xl:text-6xl">Minimal.</h1>
-                <img className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[400px]" src="/src/assets/zara1.jpg" width={400} alt="" />
+        <div ref={i} className="flex flex-col sm:flex-row relative overflow-hidden h-screen">
+            <div onClick={()=>navigate("/Men")} className=" cursor-pointer w-full sm:w-1/2 " >
+                <div className="absolute text-white left-10 xl:top-120 lg:top-100 md:top-80 sm:top-60 top-40 ">
+                    <h1 className="text-6xl h-2 font-thin">for</h1>
+                    <h1 className="xl:text-[200px] lg:text-[170px] md:text-[130px] sm:text-[110px] text-[80px] font-extralight">Men</h1>
+                </div>
+                
+                <img className="  " src="/hm-9-1.avif" alt="" />
+                
+                
+                
             </div>
-            <div ref={Impactful} className=" flex flex-col items-center md:items-start md:mt-20 ">
-                <h1 className="font-semibold lg:text-4xl text-3xl xl:text-6xl"> Impactful.</h1>
-                <img className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[400px]" src="/src/assets/hm1.avif" width={400} alt="" />
-            </div>
-            <div ref={iconic} className="flex flex-col items-center md:items-start  z-1" >
-                <h1 className="font-semibold lg:text-4xl text-3xl xl:text-6xl lg:mt-40 "> Iconic.</h1>
-                <img className="w-[150px] sm:w-[200px] md:w-[250px] lg:w-[300px] xl:w-[400px]   " src="/src/assets/zara2.jpg" width={400} alt="" />
-            </div>
+            <div onClick={()=>navigate("/Women")} className="relative cursor-pointer w-full sm:w-1/2">
+                <div className="absolute text-white left-10 xl:top-120 lg:top-110 md:top-90 sm:top-70 top-60 ">
+                    <h1 className="text-6xl h-2 font-thin">for</h1>
+                    <h1 className="xl:text-[200px] lg:text-[180px] md:text-[160px] sm:text-[140px] text-[80px] font-extralight ">Women</h1>
+                </div>
+                <img className="  " src="/whm-main.avif" alt="" />
+                
             </div>
         </div>
         </>

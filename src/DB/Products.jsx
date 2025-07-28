@@ -12,7 +12,26 @@ const MenProducts = [
         smImg:"/hm-1-2.avif",
         bigImg: "/hm-1-1.avif",
         quantity:0,
+        brand: "h&m",
         similer:[2,5,3,6],
+        delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
+        
+    },
+    {
+        id: 10,
+        title:"TEXTURED POLO SHIRT",
+        brand:"Zara",
+        price:2995,
+        size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
+        description: "Regular fit polo shirt made of fabric with a geometric texture. Featuring a spread collar with a front opening and short sleeves.",
+        material:"95% cotton, 5% polyester",
+        reviews: 0,
+        ratings:5,
+        color:"blue",
+        smImg:"/zara-2-2.jpg",
+        bigImg: "/zara-2-1.jpg",
+        quantity:0,
+        similer:[2,4,3,1],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -20,6 +39,7 @@ const MenProducts = [
         id: 2,
         title:"Loose Fit Fine-knit polo shirt",
         price:2999,
+        brand: "h&m",
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
         description: "Top in waffled, midweight jersey made from a cotton blend with a round neckline, long sleeves, a straight-cut hem and ribbing around the neckline and cuffs. Slim fit that hugs the contours of your body, creating a fitted silhouette.",
         material:"Composition Cotton 90%, Polyester 9%, Elastane 1%",
@@ -42,6 +62,7 @@ const MenProducts = [
         description: "New Arrival 5-pocket jeans in rigid cotton denim with a straight leg and a loose fit from the seat to the hem with a dropped crotch and extra room around the whole leg. Regular waist and a zip fly. All you need to conquer the full denim look..",
         material:"Composition Cotton 90%, Polyester 9%, Elastane 1%",
         reviews: 278,
+        brand: "h&m",
         ratings:4.5,
         color:"Denim blue",
         quantity:0,
@@ -49,6 +70,26 @@ const MenProducts = [
         bigImg: "/hm-3-1.avif",
         similer:[3,5,4,6],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
+        
+    },
+    {
+        id: 12,
+        title:"STRAIGHT FIT JEANS",
+        brand:"Zara",
+        price:2950,
+        size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
+        description: "Straight leg from hip to ankle, with a fit that neither tapers nor widens. Mid-rise. Rigid fabric",
+        material:"100% cotton",
+        reviews: 101,
+        ratings:4.5,
+        color:"Light blue",
+        acolor:"blue",
+        smImg:"/zara-4-2.jpg",
+        bigImg: "/zara-4-1.jpg",
+        quantity:0,
+        similer:[2,4,3,1],
+        delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
+
         
     },
     {
@@ -61,6 +102,7 @@ const MenProducts = [
         reviews: 2,
         ratings:5,
         color:"Denim blue",
+        brand: "h&m",
         smImg:"/hm-4-2.avif",
         quantity:0,
         bigImg: "/hm-4-1.avif",
@@ -73,6 +115,7 @@ const MenProducts = [
         id: 5,
         title:"Loose Straight Jeans",
         price:2699,
+        brand: "h&m",
         size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
         description: "New Arrival 5-pocket jeans in rigid cotton denim with a straight leg and a loose fit from the seat to the hem with a dropped crotch and extra room around the whole leg. Regular waist and a zip fly. All you need to conquer the full denim loo",
         material:"Composition Cotton 90%, Polyester 9%, Elastane 1%",
@@ -83,6 +126,7 @@ const MenProducts = [
         bigImg: "/hm-5-1.avif",
         quantity:0,
         similer:[2,1,3,5],
+        brand: "h&m",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -95,6 +139,7 @@ const MenProducts = [
         description: "New Arrival Shirt in rigid cotton denim with a turn-down collar, classic front with metal buttons, a yoke at the back, dropped shoulders and a rounded hem. Long sleeves with buttoned cuffs and a sleeve placket. Oversized fit for a baggy, extra-loose silhouette.",
         material:"Composition Cotton 90%, Polyester 9%, Elastane 1%",
         reviews: 0,
+        brand: "h&m",
         ratings:5,
         color:"Vintage grey",
         smImg:"/hm-6-2.avif",
@@ -114,6 +159,7 @@ const MenProducts = [
         reviews: 0,
         ratings:5,
         color:"Denim blue",
+        brand: "h&m",
         smImg:"/hm-7-2.avif",
         bigImg: "/hm-7-1.avif",
         quantity:0,
@@ -133,6 +179,7 @@ const MenProducts = [
         color:"Light blue/Nothing",
         smImg:"/hm-8-2.avif",
         bigImg: "/hm-8-1.avif",
+        brand: "h&m",
         quantity:0,
         similer:[2,4,3,1],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
@@ -151,24 +198,6 @@ const MenProducts = [
         color:"Light blue/Nothing",
         smImg:"/zara-1-2.jpg",
         bigImg: "/zara_1_1.jpg",
-        quantity:0,
-        similer:[2,4,3,1],
-        delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
-        
-    },
-    {
-        id: 10,
-        title:"TEXTURED POLO SHIRT",
-        brand:"Zara",
-        price:2995,
-        size:["XS" , "S" , "M" , 'L' , 'XL','XXL'],
-        description: "Regular fit polo shirt made of fabric with a geometric texture. Featuring a spread collar with a front opening and short sleeves.",
-        material:"95% cotton, 5% polyester",
-        reviews: 0,
-        ratings:5,
-        color:"blue",
-        smImg:"/zara-2-2.jpg",
-        bigImg: "/zara-2-1.jpg",
         quantity:0,
         similer:[2,4,3,1],
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
