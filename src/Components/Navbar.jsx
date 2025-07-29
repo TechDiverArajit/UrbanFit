@@ -48,7 +48,7 @@ export const Navbar = ()=>{
         
 
         return(
-            <nav className=" flex sticky top-0 w-screen z-2 gap-20 p-10 bg-transparent h-15 pt-2 ml-0 bg-white   ">
+            <nav className=" flex sticky top-0 w-screen z-2 gap-20 p-10 h-15 pt-2 ml-0 bg-white   ">
                 <Menu/>
                 <h1 className="brandsm text-lg lg:text-4xl font-extrabold p-2 lg:pl-10 ">UrbanFit</h1>
                 <div className="lg:gap-20 md:gap-10 sm:gap-5 xl:gap-30 hidden sm:flex h-fit max-w-200 mx-auto   sm:text-md md:text-xl lg:text-3xl xl:text-4xl font-extralight  ">
