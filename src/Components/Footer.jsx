@@ -2,7 +2,7 @@ export const Footer = ()=>{
 
     return(
         <>
-            <div className="w-screen relative flex  items-center justify-center md:justify-around gap-5 sm:gap-30 h-50 mt-20 bg-amber-100 " >
+            <div className="w-screen relative bottom-0 flex  items-center justify-center md:justify-around gap-5 sm:gap-30 h-50  bg-amber-100 " >
                 <div className="flex flex-col font-semibold ">
                 <h1 className="md:text-[40px] sm:text-[30px] text-[25px] font-black">
                     Urban

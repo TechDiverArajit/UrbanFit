@@ -9,10 +9,12 @@ const WomanProduct = [
         reviews: 0,
         ratings:0,
         color:"Denim Blue",
+        acolor: "blue",
         smImg:"/whm-1-2.avif",
         bigImg: "/whm-1-1.avif",
         quantity:0,
         similer:[10,12,15,13],
+        brand:"h&m",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -26,10 +28,12 @@ const WomanProduct = [
         reviews: 0,
         ratings:0,
         color:"Denim Blue",
+        acolor: "blue",
         smImg:"/whm-2-2.avif",
         bigImg: "/whm-2-1.avif",
         quantity:0,
         similer:[10,12,11,13],
+        brand:"h&m",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -42,11 +46,13 @@ const WomanProduct = [
         material:"Composition Cotton 100%",
         reviews: 0,
         ratings:0,
-        color:"Denim Blue",
+        color:"off white",
+        acolor: "cream",
         smImg:"/whm-3-2.avif",
         bigImg: "/whm-3-1.avif",
         quantity:0,
         similer:[15,12,14,13],
+        brand:"h&m",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -60,10 +66,12 @@ const WomanProduct = [
         reviews: 0,
         ratings:0,
         color:"Denim Blue",
+        acolor: "cream",
         smImg:"/whm-4-2.avif",
         bigImg: "/whm-4-1.avif",
         quantity:0,
         similer:[10,9,15,14], 
+        brand:"h&m",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -79,8 +87,10 @@ const WomanProduct = [
         color:"Bright red",
         smImg:"/whm-5-2.avif",
         bigImg: "/whm-5-1.avif",
+        acolor: "red",
         quantity:0,
         similer:[10,14,15,9],
+        brand:"h&m",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -96,8 +106,10 @@ const WomanProduct = [
         color:"Black",
         smImg:"/whm-6-2.avif",
         bigImg: "/whm-6-1.avif",
+        acolor: "black",
         quantity:0,
         similer:[10,12,15,14],
+        brand:"h&m",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -111,10 +123,12 @@ const WomanProduct = [
         reviews: 3,
         ratings:4.2,
         color:"Blue",
+        acolor: "blue",
         smImg:"/whm-7-2.avif",
         bigImg: "/whm-7-1.avif",
         quantity:0,
         similer:[10,12,11,13],
+        brand:"h&m",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },
@@ -132,6 +146,8 @@ const WomanProduct = [
         bigImg: "/whm-8-1.avif",
         quantity:0,
         similer:[11,13,14,12], 
+        acolor: "green",
+        brand:"h&m",
         delivery:"Delivery Time : 2-7 days Due to additional health and safety measures to protect our logistics teams, your delivery may take a little longer. Please note, that we might not be able to deliver to all areas. You will be notified about the same during checkout. We deliver all days, except bank holidays."
         
     },

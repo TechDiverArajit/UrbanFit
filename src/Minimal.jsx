@@ -44,7 +44,7 @@ export const Minimal = ()=>{
                 
             </div>
             <div onClick={()=>navigate("/Women")} className="relative cursor-pointer h-1/2 w-full sm:w-1/2">
-                <div className="absolute text-white left-5 sm:left-10 xl:top-120 lg:top-110 md:top-90 sm:top-70 top-60 ">
+                <div className="absolute text-white left-5 sm:left-10 xl:top-120 lg:top-110 md:top-90 sm:top-70 top-50 ">
                     <h1 className="text-6xl h-6 sm:h-2 font-thin">for</h1>
                     <h1 className="xl:text-[200px] lg:text-[180px] md:text-[160px] sm:text-[140px] text-[80px] font-extralight ">Women</h1>
                 </div>

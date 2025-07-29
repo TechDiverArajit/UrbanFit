@@ -55,7 +55,7 @@ export const Navbar = ()=>{
                 <NavLink style={navHandler} to="/"  className="hover-underline text-center h-9">Home</NavLink>
                 <NavLink style={navHandler} to="/Men"  className="hover-underline h-9" >Men</NavLink>
                 <NavLink style={navHandler} to="/Women" className="hover-underline h-9 " >Women</NavLink>
-                <NavLink style={navHandler} to="/Blog"  className="hover-underline h-9" >Blog</NavLink>
+                <NavLink style={navHandler} to="/About"  className="hover-underline h-9" >About us</NavLink>
                 </div>
                 <div onClick={cartHandler} className="absolute right-2 lg:right-15 ">
                 <svg className="w-[50px] h-[50px] " xmlns="http://www.w3.org/2000/svg" fill="#000000"  viewBox="0 0 24 24">

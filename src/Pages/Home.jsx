@@ -1,16 +1,15 @@
-import { HomeProduct } from "../Components/HomeProduct"
-import { Navbar } from "../Components/Navbar"
-import { Testimonials } from "../Components/Testimonials"
-import { createBrowserRouter , Route , Routes } from "react-router-dom"
+
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useEffect } from "react";
 import { useGSAP } from '@gsap/react';
 import { useRef } from "react";
 import { Minimal } from "../Minimal";
 import { HomeProducts } from "../HomeProducts";
 import SplitText from "gsap/SplitText";
 import { Explore } from "../Components/Explore";
+import { Timeless } from "../Timeless";
+import { useNavigate } from 'react-router-dom';
+import { Whyus } from '../Components/Whyus';
 gsap.registerPlugin(ScrollTrigger,SplitText);
 
 export const Home=()=>{
@@ -19,6 +18,7 @@ export const Home=()=>{
 
      const scope = useRef();
      const mainImg = useRef();
+     const navigate = useNavigate();
 
         useGSAP(()=>{
         const split = new SplitText(".brand", { type: "chars" ,});
@@ -83,6 +83,7 @@ export const Home=()=>{
             </h1>
             <p className="subtitle lg:text-3xl md:text-xl sm:text-md text-sm xl:text-5xl pl-2 sm:pl-5 ">Unleash the Drip.</p>
             </div>
+            <button onClick={()=>navigate("/Men")} className='flex items-center absolute z-1 hover:underline text-sm sm:text  m-15 sm:m-2  top-1/2  sm:right-130'>SHOP NOW <span className='absolute pl-19 sm:pl-22 hover:translate-x-2 transition-transform duration-150  w-30'><img className='lg:w-7 md:w-6 sm:w-5 w-4' src="/arrow.png"  alt="" /></span> </button>
             <img ref={mainImg} className="max-w-[400px] md:max-w-[500px]  xl:bottom-0  absolute left-10 xl:left-180 xl:top-1 top-83 xl:max-w-[605px]   z-0 drop-shadow-2xl select-none  "   src="/zara.png"  alt="" />
             {/* <video className=" absolute -z-2 top-30" src="/video.mp4" autoPlay loop muted playsInline></video> */}
             <Explore/>
@@ -93,46 +94,26 @@ export const Home=()=>{
         </div>
         
         <Minimal/>
+        <Timeless/>
         <HomeProducts/>
         
         
-        <div className="h-[1024px] flex gap-50 bg-gray-300 ">
-            <div>
-            <img src="/src/assets/hm4.avif" width={682} alt="" />
-        </div>
-        <div>
-            <h1 className="text-6xl pt-20 font-bold">Our Happy Customers</h1>
-        </div>
-        <div className="absolute left-200 pt-60">
-            <Testimonials user={" Zaid R. (Hyderabad)"} review={"“Bro I didn’t even know affordable outfits could look this luxe. My fashion game just leveled up 🧢.”"} />
-        </div>
-        <div className="absolute left-350 pt-100">
-            <Testimonials user={"Riya T. (Delhi)"} review={"“UrbanFit is my new obsession! Every fit feels like it’s made for Insta 😍📸.”"} />
-        </div>
-        <div className="absolute left-200 pt-150">
-            <Testimonials user={" Aarav J., Hyderabad"} review={"“Didn’t expect such premium quality at this price. The packaging, the feel, everything’s 🔥.”"} />
-        </div>
-        <div className="absolute left-350 pt-200">
-            <Testimonials user={" Tanya K., Bangalore"} review={"“Minimal yet bold – exactly my aesthetic. I’ve already ordered three more outfits.”"} />
-        </div>
-        </div>
-        <div className="flex h-[613px]">
-            <div className="w-[849px] pt-10 pl-25">
-                <h1 className="font-semibold text-2xl">About us</h1>
-                <h1 className="font-extralight text-2xl">At UrbanFit, we don’t just showcase outfits — we showcase identities.Born from a 
-passion for bold fashion and clean aesthetics, UrbanFit is your digital runway for 
-discovering outfits that speak louder than words.
-</h1>
+        
+        <div className="w-screen lg:h-[600px] bg-gradient-to-b from-[#FFFFFF] to-[#6d6653] pb-10 ">
+            <div className='pt-10'>
+            <h1 className='text-2xl font-semibold text-center' >Why choose us</h1>
+            <h1 className='text-center text-[15px] font-light m-2 '>
+                In a world overflowing with trends, we stand for timeless sophistication.
+ Every detail we craft is a tribute to elegance, not noise. Here's why we are
+ more than just a choice – we’re a statement.
+            </h1>
             </div>
-            <img className=" absolute right-0" src="/hm3.avif" width={411} alt="" />
-        </div>
-        <div className=" overflow-x-hidden whitespace-nowrap ">
-            <div className="flex animate-marquee w-[200%]">
-                <div className="h-[113px] bg-amber-100 flex gap-40">
+            <div className='flex lg:flex-row flex-col items-center gap-30 justify-around mt-20'>
+            <Whyus title={"🌿 Refined Craftsmanship"} des={"Each piece we create is born from a meticulous process. Our artisans don’t rush – they curate. From the stitching on a coat to the finish on a heel, we honor tradition while embracing innovation. This isn’t fast fashion. This is forever fashion."}/>
+            <Whyus title={"💫 Minimal Yet Iconic"} des={`We believe less truly is more. Our designs breathe – clean lines, neutral palettes, bold silhouettes. They whisper confidence without ever needing to scream. You don’t wear us to fit in. You wear us to stand out quietly.`} />
+            <Whyus title={"💖 Designed for You"} des={"You're not average, and neither are we. Every collection is thoughtfully designed to celebrate individuality – your walk, your flair, your vibe. Whether you’re conquering the boardroom or dancing under moonlight, we’re stitched for your moment."}/>
                 </div>
-            </div>
-
-        </div>
+    </div>
         </>
 
 
