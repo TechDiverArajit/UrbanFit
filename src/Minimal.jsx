@@ -32,20 +32,20 @@ export const Minimal = ()=>{
     return(
         <>
         <div ref={i} className="flex flex-col sm:flex-row relative overflow-hidden h-screen">
-            <div onClick={()=>navigate("/Men")} className=" cursor-pointer w-full sm:w-1/2 " >
+            <div onClick={()=>navigate("/Men")} className=" cursor-pointer h-1/2 w-full sm:w-1/2 " >
                 <div className="absolute text-white left-10 xl:top-120 lg:top-100 md:top-80 sm:top-60 top-40 ">
-                    <h1 className="text-6xl h-2 font-thin">for</h1>
+                    <h1 className="text-6xl h-6 sm:h-2 font-thin">for</h1>
                     <h1 className="xl:text-[200px] lg:text-[170px] md:text-[130px] sm:text-[110px] text-[80px] font-extralight">Men</h1>
                 </div>
                 
-                <img className="  " src="/hm-9-1.avif" alt="" />
+                <img className=" " src="/hm-9-1.avif" alt="" />
                 
                 
                 
             </div>
-            <div onClick={()=>navigate("/Women")} className="relative cursor-pointer w-full sm:w-1/2">
-                <div className="absolute text-white left-10 xl:top-120 lg:top-110 md:top-90 sm:top-70 top-60 ">
-                    <h1 className="text-6xl h-2 font-thin">for</h1>
+            <div onClick={()=>navigate("/Women")} className="relative cursor-pointer h-1/2 w-full sm:w-1/2">
+                <div className="absolute text-white left-5 sm:left-10 xl:top-120 lg:top-110 md:top-90 sm:top-70 top-60 ">
+                    <h1 className="text-6xl h-6 sm:h-2 font-thin">for</h1>
                     <h1 className="xl:text-[200px] lg:text-[180px] md:text-[160px] sm:text-[140px] text-[80px] font-extralight ">Women</h1>
                 </div>
                 <img className="  " src="/whm-main.avif" alt="" />

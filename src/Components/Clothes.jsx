@@ -24,8 +24,8 @@ export const Clothes = ({product})=>{
 
     return(
         <>
-            <div ref={item} onClick={()=>navigate(`/Items/${product.id}`)}  className="transition duration-400   max-w-[370px] ">
-                <div className="relative w-[370px] h-[500px] overflow-hidden group">
+            <div ref={item} onClick={()=>navigate(`/Items/${product.id}`)}  className="transition duration-400   max-w-[370px] w-full ">
+                <div className="relative w-full h-[500px] overflow-hidden group">
                     <img className="absolute w-full h-[500px] object-cover transition-transform duration-700 ease-in-out group-hover:translate-x-full " src={product.bigImg}  alt="" />
                     <img className="absolute w-full h-[500px] object-cover transition-transform duration-700 ease-in-out translate-x-[-100%] group-hover:translate-x-0" src={product.smImg} alt="" />
                 </div>

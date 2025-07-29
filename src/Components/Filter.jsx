@@ -1,4 +1,8 @@
-export const Filter = ()=>{
+
+export const Filter = ({hnm})=>{
+
+    
+    
     return(
         <>
             
