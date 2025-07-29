@@ -25,7 +25,7 @@ export const Menu =()=>{
                         <NavLink onClick={()=>setIsMenuOpened(false)} style={navHandler} to="/"  className="text-2xl h-9 transition-all pl-10 pt-10  duration-150 hover:text-blue-400">Home</NavLink>
                         <NavLink onClick={()=>setIsMenuOpened(false)} style={navHandler} to="/Men"  className="text-2xl h-9 transition-all pl-10 pt-10  duration-150 hover:text-blue-400" >Men</NavLink>
                         <NavLink onClick={()=>setIsMenuOpened(false)} style={navHandler} to="/Women" className="text-2xl h-9 transition-all pl-10 pt-10 duration-150 hover:text-blue-400 " >Women</NavLink>
-                        <NavLink onClick={()=>setIsMenuOpened(false)} style={navHandler} to="/About"  className="text-2xl h-9 transition-all pl-10 pt-10 duration-150 hover:text-blue-400" >Blog</NavLink>
+                        <NavLink onClick={()=>setIsMenuOpened(false)} style={navHandler} to="/About"  className="text-2xl h-9 transition-all pl-10 pt-10 duration-150 hover:text-blue-400" >About Us</NavLink>
                         <h1 className=" relative top-200 text-lg lg:text-4xl font-extrabold p-2 lg:pl-15">UrbanFit</h1>
                     </div>
                     
