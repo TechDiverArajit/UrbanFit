@@ -76,7 +76,7 @@ export const Timeless = ()=>{
                 ease:"power2.inOut",
                 scrollTrigger:{
                     trigger:".woman",
-                    start:"top 80%"
+                    start:"top 90%"
                     
                 }
             }
