@@ -77,7 +77,6 @@ export const Timeless = ()=>{
                 scrollTrigger:{
                     trigger:".woman",
                     start:"top 90%"
-                    
                 }
             }
         )
